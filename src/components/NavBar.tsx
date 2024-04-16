@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 interface NavBarProps {
-    active: "dashboard" | "movimentacoes" | "categorias"
+    active: "home" | "alunos" | "professores"
 }
 
 export default function NavBar(props: NavBarProps) {
@@ -12,14 +12,14 @@ export default function NavBar(props: NavBarProps) {
         <nav className="flex bg-slate-900 w-full justify-between items-center px-6 py-4">
             <h1 className="text-3xl font-bold">Finanças Pro</h1>
             <ul className="flex gap-6">
-                <li className={active == "dashboard" ? activeClass : ""} >
-                    <Link href="/">dashboard</Link>
+                <li className={active == "home" ? activeClass : ""} >
+                    <Link href="/">home</Link>
                 </li>
-                <li className={active == "movimentacoes" ? activeClass : ""} >
-                    <Link href="/movimentacoes">movimentações</Link>
+                <li className={active == "alunos" ? activeClass : ""} >
+                    <Link href="/movimentacoes">alunos</Link>
                 </li>
-                <li className={active == "categorias" ? activeClass : ""}>
-                    <Link href="/categorias">categorias</Link>
+                <li className={active == "professores" ? activeClass : ""}>
+                    <Link href="/categorias">professores</Link>
                 </li>
             </ul>
             <div className="w-14 rounded-full overflow-hidden">

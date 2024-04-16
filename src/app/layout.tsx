@@ -7,8 +7,8 @@ import { Toaster } from "react-hot-toast";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Finanças Pro",
-  description: "App de controle de gastos pessoais",
+  title: "Gerenciamento escolar",
+  description: "App de gerenciamento escolar",
 };
 
 export default function RootLayout({

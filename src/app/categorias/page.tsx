@@ -11,15 +11,15 @@ export default async function Categorias() {
 
   return (
     <main className="flex min-h-screen flex-col items-center">
-      <NavBar active="categorias" />
+      <NavBar active="professores" />
 
       <section className="flex flex-col gap-5 bg-slate-900 p-6 mt-6 rounded min-w-96">
 
         <div className="flex justify-between gap-4">
-          <h2 className="text-2xl font-bold">Categorias Cadastradas</h2>
+          <h2 className="text-2xl font-bold">Professores Cadastrados</h2>
           <Link href="/categorias/new">
             <Button color="primary" startContent={<Plus size={18} />}>
-              nova categoria
+              novo professor
             </Button>
           </Link>
         </div>
